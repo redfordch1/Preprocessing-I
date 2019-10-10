@@ -1,1 +1,271 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+.container {
+  width: 100%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  background-color: #d3d3d3;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+.header {
+  height: 90vh;
+  width: 100%;
+  background-image: url(../img/clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: -750px -514px;
+}
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .nav .hCon {
+  border: 2px solid black;
+}
+.header a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  margin: 20px;
+  font-size: 2.8em;
+  padding: 7px;
+}
+.header h1,
+.header p {
+  font-size: 7.5em;
+  text-align: center;
+}
+.header h1 {
+  border-top: 1px solid white;
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.header p {
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 25px auto 0 auto;
+}
+.header .box {
+  border: 1px solid rgba(250, 244, 244, 0.678);
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 90px 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  height: 360px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10% 0 10% 0;
+}
+.section .aboutMe {
+  width: 70%;
+  text-align: center;
+  background-color: rgba(0, 128, 128, 0.5);
+  border: 3px solid darkgray;
+  color: black;
+}
+.section .aboutMe h2 {
+  font-size: 5em;
+  padding: 30px 0 5px 0;
+  border-bottom: 2px solid black;
+  width: 30%;
+  margin: 0 auto;
+}
+.section .aboutMe p {
+  font-size: 3.5em;
+  padding: 30px;
+}
+.section .skills {
+  width: 70%;
+  text-align: center;
+  background-color: #2f4f4f;
+  color: lightgray;
+  border: 3px solid darkgray;
+}
+.section .skills h2 {
+  font-size: 5em;
+  padding: 30px 0 5px 0;
+  border-bottom: 2px solid darkgray;
+  width: 20%;
+  margin: 0 auto;
+}
+.section .skills ul {
+  font-size: 3.5em;
+  padding: 10px 0 30px 0;
+}
+.section .skills li {
+  margin-top: 20px;
+}
+.section .workHistory {
+  width: 70%;
+  text-align: center;
+  background-color: #81f8d0;
+  color: #807f7f;
+  border: 3px solid darkgray;
+}
+.section .workHistory h2 {
+  font-size: 5em;
+  padding: 30px 0 5px 0;
+  border-bottom: 2px solid darkgray;
+  width: 30%;
+  margin: 0 auto;
+}
+.section .workHistory ul {
+  font-size: 3.5em;
+  padding: 10px 0 30px 0;
+}
+.section .workHistory li {
+  margin-top: 20px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 3em;
+}

@@ -53,7 +53,187 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@main-font: 'Lato', sans-serif;
+
+.center(){
+	display:flex;
+	justify-content:center;
+  }
+
+
+.container {
+	width: 100%;
 }
+
+html, body {
+	height: 100%;
+	font-size: 62.5%;
+	background-color: rgb(211,211,211);
+	font-family: @main-font;
+	color: white;
+}
+// =========== HEADER ============
+.header {
+	height: 90vh;
+	width: 100%;
+	background-image: url(../img/clouds.jpg);
+	background-repeat: no-repeat;
+	background-position: -750px -514px;
+
+	.nav {
+		display: flex;
+		justify-content: flex-end;
+
+		.hCon {
+			border: 2px solid black;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		font-family: @main-font;
+		color: black;
+		margin: 20px;
+		font-size: 2.8em;
+		padding: 7px;
+	}
+
+	h1, p {
+		font-size: 7.5em;
+		text-align: center;	
+	}
+
+	h1 {
+		border-top: 1px solid white;
+		padding-top: 30px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	p {
+		border-bottom: 1px solid white;
+		padding-bottom: 30px;
+		width: 90%;
+		margin: 25px auto 0 auto;
+
+	}
+
+	.box {
+		
+		border: 1px solid rgba(250, 244, 244, 0.678);
+		width: 360px;
+		margin: 0 auto;
+		margin-top: 150px;
+		padding: 90px 0;
+		background-color: rgba(128,128,128,0.5);
+		height: 360px;
+		background: linear-gradient(rgba(0, 0, 0, 0.4),
+		rgba(0, 0, 0, 0.7);
+
+		);
+	}
+}
+// ========== END HEADER =========
+
+// ========== WHOLE CONTENT ==========
+
+.section {
+	.center();
+	width: 100%;
+	margin: 10% 0 10% 0;
+
+	.aboutMe {
+		width: 70%;
+		text-align: center;
+		background-color: rgba(0,128,128,0.5);
+		border: 3px solid darkgray;
+		color: black;
+
+		h2 {
+			font-size: 5em;
+			padding: 30px 0 5px 0;
+			border-bottom: 2px solid black;
+			width: 30%;
+			margin: 0 auto;
+		}
+
+		p {
+			font-size: 3.5em;
+			padding: 30px;
+		}
+
+	}
+
+	.skills {
+		width: 70%;
+		text-align: center;
+		background-color: rgb(47,79,79);
+		color: lightgray;
+		border: 3px solid darkgray;
+
+		h2 {
+			font-size: 5em;
+			padding: 30px 0 5px 0;
+			border-bottom: 2px solid darkgray;
+			width: 20%;
+			margin: 0 auto;
+		}
+
+		ul {
+			font-size: 3.5em;
+			padding: 10px 0 30px 0;
+		}
+
+		li {
+			margin-top: 20px;
+		}
+
+	}
+
+	.workHistory {
+		width: 70%;
+		text-align: center;
+		background-color: rgb(129, 248, 208);
+		color: rgb(128, 127, 127);
+		border: 3px solid darkgray;
+
+		h2 {
+			font-size: 5em;
+			padding: 30px 0 5px 0;
+			border-bottom: 2px solid darkgray;
+			width: 30%;
+			margin: 0 auto;
+		}
+
+		ul {
+			font-size: 3.5em;
+			padding: 10px 0 30px 0;
+		}
+
+		li {
+			margin-top: 20px;
+		}
+	}
+	
+	
+}
+
+footer {
+	.center();
+	color: black;
+	font-size: 3em;
+}
+
+// ======== END WHOLE CONTENT ==========
+
+
+
+
+
+
+
+
 
