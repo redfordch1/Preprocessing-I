@@ -144,6 +144,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  background-color: #d3d3d3;
   font-family: 'Lato', sans-serif;
   color: white;
 }
@@ -152,21 +153,21 @@ body {
   width: 100%;
   background-image: url(../img/clouds.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -514px;
+  background-position: -750px -514px;
 }
 .header .nav {
   display: flex;
   justify-content: flex-end;
 }
 .header .nav .hCon {
-  border: 2px solid white;
+  border: 2px solid black;
 }
 .header a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  color: white;
+  color: black;
   margin: 20px;
-  font-size: 2.5em;
+  font-size: 2.8em;
   padding: 7px;
 }
 .header h1,
